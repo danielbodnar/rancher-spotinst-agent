@@ -1,0 +1,4 @@
+FROM rancher/agent:${AGENT_VERSION}
+MAINTAINER Daniel Bodnar daniel.bodnar@gmail.com
+COPY start.sh /start.sh
+ENTRYPOINT ["/start.sh"]
