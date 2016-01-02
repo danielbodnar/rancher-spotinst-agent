@@ -1,6 +1,6 @@
 The [instructions](http://blog.spotinst.com/2015/11/26/rancher-spotinst-how-integration-works/) spotinst provides is for a shell-based user-data file. I was unable to add a CATTLE_HOST_LABELS environment variable for "spotinst.instanceId", using cloud-config / docker-compose yaml syntax on RancherOS.
 
-This image extends the rancher/agent image and
+This image extends the rancher/agent image and changes the docker ENTRYPOINT to a script that export's the CATTLE_HOST_LABELS environment variable and then executes the previous entrypoint (/run.sh).
 
 ### Usage
 
