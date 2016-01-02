@@ -23,5 +23,5 @@ rancher:
 ### Building
 
 ```
-./build-image.sh v0.8.2 && docker push rancher-spotinst-agent [registry]/[username]/rancher-spot-inst-agent:v0.8.2
+./build-image.sh v0.8.2 && docker push rancher-spotinst-agent [registry]/[username]/rancher-spotinst-agent:v0.8.2
 ```
