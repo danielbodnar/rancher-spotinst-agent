@@ -10,8 +10,8 @@ If your EC2 AMI ID is a RancherOS AMI, then insert the following into the "User 
 #cloud-config
 rancher:
   services:
-    rancher-agent1:
-      image: danielbodnar/rancher-spotinst-agent:v0.8.2
+    rancher-agent:
+      image: danielbodnar/rancher-spotinst-agent:v1.0.1
       command: [insert agent string here. e.g.: http://rancher.domain.com:8080/v1/scripts/[token]]
       privileged: true
       volumes:
@@ -23,5 +23,5 @@ rancher:
 ### Building
 
 ```
-./build-image.sh v0.8.2 && docker push rancher-spotinst-agent [registry]/[username]/rancher-spotinst-agent:v0.8.2
+./build-image.sh v1.0.1 && docker push rancher-spotinst-agent [registry]/[username]/rancher-spotinst-agent:v1.0.1
 ```
